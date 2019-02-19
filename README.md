@@ -1,2 +1,2 @@
 # MYSJZHA.github.io
-网站
+属于AASS的网站（手动滑稽）
