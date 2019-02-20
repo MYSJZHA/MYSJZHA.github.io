@@ -13,7 +13,7 @@
 	  var time=new Date().getTime();
 	  while(true)
 	  {
-	  var b=confirm("这个信息框出现了"+i+"次/u000d按取消结束");
+	  var b=confirm("这个信息框出现了"+i+"次，按取消结束");
 	  if(b==true)
 	  {
 	  i++;
@@ -25,6 +25,7 @@
 	  }
 var time1=new Date().getTime();
 var b=(time-time1)/1000.0000;
+b = b * -1;
 alert("恭喜你在这个地方浪费了"+b+"秒");
 	</script>
   </body>
