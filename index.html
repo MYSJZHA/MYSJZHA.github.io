@@ -19,10 +19,14 @@
 	  var b=confirm("这个信息框出现了"+i+"次，按取消结束");
 	  if(b==true)
 	  {
-		  if(i=9){
+		  if(i>9){
 			  confirm("无聊吗？");
-			  i++;
-			  }else{i++;}}else{break;
+			  }else{
+	  i++;}
+	  }
+	  else
+	  {
+	  	break;
 	  }
 	  }
 var time1=new Date().getTime();
@@ -50,4 +54,4 @@ alert("恭喜你在这个地方浪费了"+b+"秒");
 */
 	</script>
   </body>
-</html>		
+</html>
