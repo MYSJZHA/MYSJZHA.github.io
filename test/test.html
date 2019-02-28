@@ -8,24 +8,19 @@
   var i=0;
 function butt()
 {
+  sleep(5000);
   i++;
   document.getElementById("aa").value=i;
 }
-  var timerr;
-  var timerrr;
-  var cha;
-  var chazhi;
-  for(timer=0;timer<0;timer++)
-  {timerr = gettime();
-  chazhi = chazhi + cha;
-   timerrr = gettime();
-   if(chazhi>15000)
-     {
-       timer=-10000;
-     }
-  cha = timerrr - timerr;
+  function sleep(timer){
+  t1 = gettime();
+  for(s=0;s<0;s++){
+  t2 = gettime();
+  if(t2-t1>timer){
+  break;
   }
-  confirm("15")
+  }
+  }
 </script>
 </body>
 </html>
