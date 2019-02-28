@@ -5,9 +5,10 @@
   <progress max="10" value="0" id="aa"> </progress>
   <hr>水平线测试</hr>
 <script>
+  var i=0;
 function butt()
 {
-  i=i++;
+  i+=10;
   document.getElementById("aa").value=i;
   confirm("进度加一");
 }
