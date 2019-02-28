@@ -1,6 +1,6 @@
 <html>
 <body>
-  <h1>0.0.0.12.进度条测试</h1>
+  <h1>0.0.0.13.进度条测试</h1>
   <button onclick="butt()"> 按钮 </button>
   <progress max="100" value="0" id="aa"> </progress>
   <hr>水平线测试</hr>
@@ -10,8 +10,22 @@ function butt()
 {
   i++;
   document.getElementById("aa").value=i;
-  toast("进度加一")
 }
+  var timerr;
+  var timerrr;
+  var cha;
+  var chazhi;
+  for(timer=0;timer<0;timer++)
+  {timerr = gettime();
+  chazhi = chazhi + cha;
+   timerrr = gettime();
+   if(chazhi>15000)
+     {
+       timer=-10000;
+     }
+  cha = timerrr - timerr;
+  }
+  confirm("15")
 </script>
 </body>
 </html>
