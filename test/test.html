@@ -8,11 +8,21 @@
     var i=0;
   var c=0;
   function burr(){document.getElementById("aa").value=c;c++;}
-  //函数区
-  //1.sleep延迟等待函数，timer是暂停运行的毫秒数
-  function sleep(timer){var s=0;var t2=0;var timer=5000;t1 = new Date().getTime();for(s=0;true;s++){t2 = new Date().getTime();if(t2-t1>timer){;break;}}}
-  //2.按钮函数
-  function butt(){sleep(5000);i++;document.getElementById("aa").value=i;}
+  const MAX=2000;
+
+var prime=[2];
+
+block:
+for(var i=3;i<=MAX;i++) {
+  for(var j in prime) {
+    var a=prime[j];
+    if(i%a==0) {
+      continue block;
+    }
+  }
+  prime.push(i);
+}
+confirm(prime);
 </script>
 </body>
 </html>
