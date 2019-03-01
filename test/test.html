@@ -1,12 +1,13 @@
 <html>
 <body>
-  <h1>0.0.0.20.进度条测试</h1>
+  <h1>0.0.0.21.进度条测试</h1>
   <button onclick="burr()"> 按钮 </button>
   <progress max="100" value="3" id="aa"> </progress>
   <hr>水平线测试</hr>
 <script>
     var i=0;
-  function burr(){for(var r=25;true;r++){document.getElementById("aa").value=r}
+  var c=0;
+  function burr(){for(var r=25;true;r++){document.getElementById("aa").value=c;c++;}
   //函数区
   //1.sleep延迟等待函数，timer是暂停运行的毫秒数
   function sleep(timer){var s=0;var t2=0;var timer=5000;t1 = new Date().getTime();for(s=0;true;s++){t2 = new Date().getTime();if(t2-t1>timer){;break;}}}
