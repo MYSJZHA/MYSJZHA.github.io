@@ -1,28 +1,14 @@
 <html>
 <body>
-  <h1>0.0.0.21.进度条测试</h1>
+  <h1>0.0.1.0.进度条测试</h1>
   <button onclick="burr()"> 按钮 </button>
   <progress max="100" value="3" id="aa"> </progress>
+  <input>输入测试</input>
   <hr>水平线测试</hr>
 <script>
     var i=0;
   var c=0;
   function burr(){document.getElementById("aa").value=c;c++;}
-  const MAX=2000;
-
-var prime=[2];
-
-block:
-for(var i=3;i<=MAX;i++) {
-  for(var j in prime) {
-    var a=prime[j];
-    if(i%a==0) {
-      continue block;
-    }
-  }
-  prime.push(i);
-}
-confirm(prime);
 </script>
 </body>
 </html>
