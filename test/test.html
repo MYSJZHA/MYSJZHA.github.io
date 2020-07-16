@@ -8,7 +8,21 @@
 <script>
     var i=0;
   var c=0;
-  function burr(){document.getElementById("aa").value=c;c++;}
+  function burr(){getGradeRanking()}
+      // 年级排名
+    var grMin = 0;
+    var gradeRanking = 100;
+    function getGradeRanking() {
+        var gr = setInterval(function () {
+            grMin += 1;
+            if (grMin <= gradeRanking) {
+                document.getElementById("aa").value=geMin;
+            }
+            else {
+                clearInterval(gr);
+            }
+        }, 5);
+    }
 </script>
 </body>
 </html>
