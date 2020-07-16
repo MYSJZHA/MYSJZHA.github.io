@@ -9,7 +9,6 @@
     var i=0;
   var c=1;
   function burr(){getGradeRanking()}
-  document.getElementById("para").innerHTML="哦，是吗";
       // 年级排名
     var grMin = 0;
     var gradeRanking = 100;
@@ -19,10 +18,13 @@
             if (grMin < 100 && grMin>0) {
                 document.getElementById("aa").value=grMin;
             }
-            else {
-              clearInterval(gr);
-                c = -c;
-            }
+            else 
+              if (grMin = 0){
+                c = 1;
+                } else {
+                c = -1;
+                }
+          
         }, 5);
     }
 </script>
