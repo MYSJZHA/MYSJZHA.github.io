@@ -1,6 +1,6 @@
 <html>
 <body>
-  <h1>1.6.0.0.进度条测试</h1>
+  <h1>1.6.1.0.进度条测试</h1>
   <button onclick="burr()"> 按钮 </button>
   <progress max="100" value="3" id="aa"> </progress>
   <input>输入测试</input>
@@ -18,12 +18,13 @@
             if (grMin < 100 && grMin>0) {
                 document.getElementById("aa").value=grMin;
             }
-            else 
-              if (grMin = 0){
+            else {
+              if (grMin <= 0){
                 c = 1;
                 } else {
                 c = -1;
                 }
+                 }
           
         }, 5);
     }
